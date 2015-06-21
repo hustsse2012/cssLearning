@@ -1,66 +1,57 @@
-@keyframes rotate_pacman_half_up {
-  0% {
-    transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-  }
-  50% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-  }
-}
 @-webkit-keyframes rotate_pacman_half_up {
   0% {
-    transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   50% {
-    transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }
-@keyframes rotate_pacman_half_down {
+@keyframes rotate_pacman_half_up {
   0% {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   50% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }
 @-webkit-keyframes rotate_pacman_half_down {
   0% {
-    transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   50% {
-    transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
-@keyframes pacman-balls {
-  75% {
-    opacity: 0.7;
+@keyframes rotate_pacman_half_down {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate(-100px, -6.25px);
-    -webkit-transform: translate(-100px, -6.25px);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 @-webkit-keyframes pacman-balls {
@@ -68,35 +59,44 @@
     opacity: 0.7;
   }
   100% {
-    transform: translate(-100px, -6.25px);
     -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\00003106}}
+@keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000358}}
 .pacman {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000352}}
 .pacman > div:nth-child(2) {
-  animation: pacman-balls 1s -0.99s infinite linear;
   -webkit-animation: pacman-balls 1s -0.99s infinite linear;
+  animation: pacman-balls 1s -0.99s infinite linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000352}}
 .pacman > div:nth-child(3) {
-  animation: pacman-balls 1s -0.66s infinite linear;
   -webkit-animation: pacman-balls 1s -0.66s infinite linear;
+  animation: pacman-balls 1s -0.66s infinite linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000352}}
 .pacman > div:nth-child(4) {
-  animation: pacman-balls 1s -0.33s infinite linear;
   -webkit-animation: pacman-balls 1s -0.33s infinite linear;
+  animation: pacman-balls 1s -0.33s infinite linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000352}}
 .pacman > div:nth-child(5) {
-  animation: pacman-balls 1s 0s infinite linear;
   -webkit-animation: pacman-balls 1s 0s infinite linear;
+  animation: pacman-balls 1s 0s infinite linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000363}}
 .pacman > div:first-of-type {
   width: 0px;
   height: 0px;
@@ -105,12 +105,12 @@
   border-left: 25px solid #fff;
   border-bottom: 25px solid #fff;
   border-radius: 25px;
-  animation: rotate_pacman_half_up 0.5s 0s infinite;
   -webkit-animation: rotate_pacman_half_up 0.5s 0s infinite;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
   position: relative;
   left: -30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000371}}
 .pacman > div:nth-child(2) {
   width: 0px;
   height: 0px;
@@ -119,13 +119,13 @@
   border-left: 25px solid #fff;
   border-bottom: 25px solid #fff;
   border-radius: 25px;
-  animation: rotate_pacman_half_down 0.5s 0s infinite;
   -webkit-animation: rotate_pacman_half_down 0.5s 0s infinite;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
   margin-top: -50px;
   position: relative;
   left: -30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/pacman\.scss}line{font-family:\0000380}}
 .pacman > div:nth-child(3),
 .pacman > div:nth-child(4),
 .pacman > div:nth-child(5) {
@@ -137,8 +137,8 @@
   width: 10px;
   height: 10px;
   position: absolute;
-  transform: translate(0, -6.25px);
   -webkit-transform: translate(0, -6.25px);
+  transform: translate(0, -6.25px);
   top: 25px;
   left: 70px;
 }

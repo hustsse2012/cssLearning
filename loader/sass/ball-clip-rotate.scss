@@ -1,33 +1,15 @@
 @import "variable.scss";
 @import "mixin.scss";
 
-@-webkit-keyframes rotate {
+@include keyframes("rotate") {
     0% {
-        -webkit-transform: scale(1) rotate(0deg);
-        transform: scale(1) rotate(0deg);
+        @include transform(scale(1) rotate(0deg));
     }
     50% {
-        -webkit-transform: scale(0.6) rotate(180deg);
-        transform: scale(0.6) rotate(180deg);
+        @include transform(scale(0.6) rotate(180deg));
     }
     100% {
-        -webkit-transform: scale(1) rotate(360deg);
-        transform: scale(1) rotate(360deg);
-    }
-}
-
-@keyframes rotate {
-    0% {
-        -webkit-transform: scale(1) rotate(0deg);
-        transform: scale(1) rotate(0deg);
-    }
-    50% {
-        -webkit-transform: scale(0.6) rotate(180deg);
-        transform: scale(0.6) rotate(180deg);
-    }
-    100% {
-        -webkit-transform: scale(1) rotate(360deg);
-        transform: scale(1) rotate(360deg);
+        @include transform(scale(1) rotate(360deg));
     }
 }
 
@@ -42,8 +24,8 @@
         height: 25px;
         width: 25px;
         background: transparent !important;
-        animation: rotate 0.75s 0s infinite linear;
-        -webkit-animation: rotate 0.75s 0s infinite linear;
+        @include animation(rotate 0.75s 0s infinite linear);
+
         display: inline-block;
     }
 }

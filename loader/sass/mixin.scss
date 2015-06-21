@@ -24,3 +24,23 @@
   border-radius: 2px;
   margin: $margin;
 }
+
+@mixin keyframes($n) {
+    @-webkit-keyframes #{$n} {
+        @content;
+    }
+
+    @keyframes #{$n} {
+        @content;   
+    }
+}
+
+@mixin transform($param...) {
+    -webkit-transform: $param;
+    transform: $param;
+}
+
+@mixin animation($param...) {
+    -webkit-animation: $param;
+    animation: $param;
+}

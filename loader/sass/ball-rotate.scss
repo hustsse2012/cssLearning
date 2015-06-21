@@ -1,33 +1,15 @@
 @import 'variable';
 @import 'mixin';
 
-@-webkit-keyframes rotate {
+@include keyframes("rotate") {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include transform(rotate(0deg));
   }
   50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    @include transform(rotate(180deg));
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    @include transform(rotate(360deg));
   }
 }
 
@@ -41,8 +23,7 @@
     position: relative;
 
     &:first-child {
-      -webkit-animation: rotate 1s 0s cubic-bezier(.7,-.13,.22,.86) infinite;
-      animation: rotate 1s 0s cubic-bezier(.7,-.13,.22,.86) infinite;
+      @include animation(rotate 1s 0s cubic-bezier(.7,-.13,.22,.86) infinite);
     }
 
     &:before, &:after {

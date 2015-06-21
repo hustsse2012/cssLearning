@@ -1,28 +1,13 @@
 @import "variable";
 @import "mixin";
 
-@-webkit-keyframes scale-ripple {
+@include keyframes("scale-ripple") {
     0% {
-        -webkit-transform: scale(0) ;
-        transform: scale(0) ;
+        @include transform(scale(0));
         opacity: 1;
     }
     100% {
-        -webkit-transform: scale(1) ;
-        transform: scale(1) ;
-        opacity: 0;
-    }
-}
-
-@keyframes scale-ripple {
-    0% {
-        -webkit-transform: scale(0) ;
-        transform: scale(0) ;
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1) ;
-        transform: scale(1) ;
+        @include transform(scale(1));
         opacity: 0;
     }
 }
@@ -37,8 +22,7 @@
         width: 60px;
         border: 2px solid $primary-color;
         background-color: transparent !important;
-        -webkit-animation: scale-ripple 1.2s 0s infinite ease-in-out;
-        animation: scale-ripple 1.2s 0s infinite ease-in-out;
+        @include animation(scale-ripple 1.2s 0s infinite ease-in-out);
         display: inline-block;
     }
 }

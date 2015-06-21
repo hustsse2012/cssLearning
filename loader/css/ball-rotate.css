@@ -26,11 +26,11 @@
     transform: rotate(360deg);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000316}}
 .ball-rotate {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000319}}
 .ball-rotate > div {
   background-color: #fff;
   width: 20px;
@@ -41,12 +41,12 @@
   -webkit-animation-fill-mode: both;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000325}}
 .ball-rotate > div:first-child {
   -webkit-animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
   animation: rotate 1s 0s cubic-bezier(0.7, -0.13, 0.22, 0.86) infinite;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000329}}
 .ball-rotate > div:before, .ball-rotate > div:after {
   background-color: #fff;
   width: 20px;
@@ -59,12 +59,12 @@
   position: absolute;
   opacity: 0.8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000339}}
 .ball-rotate > div:before {
   top: 1px;
   left: -26px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-rotate\.scss}line{font-family:\0000344}}
 .ball-rotate > div:after {
   top: 1px;
   left: 26px;

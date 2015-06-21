@@ -26,7 +26,7 @@
     transform: scale(1) rotate(360deg);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-clip-rotate\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-clip-rotate\.scss}line{font-family:\0000318}}
 .ball-clip-rotate > div {
   background-color: #fff;
   width: 20px;
@@ -40,7 +40,7 @@
   height: 25px;
   width: 25px;
   background: transparent !important;
-  animation: rotate 0.75s 0s infinite linear;
   -webkit-animation: rotate 0.75s 0s infinite linear;
+  animation: rotate 0.75s 0s infinite linear;
   display: inline-block;
 }

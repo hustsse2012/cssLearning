@@ -22,6 +22,7 @@
     opacity: 0;
   }
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/chenlvjie\/Documents\/GitHub\/cssLearning\/loader\/sass\/ball-scale-ripple\.scss}line{font-family:\0000317}}
 .ball-scale-ripple > div {
   background-color: #fff;
   width: 20px;
