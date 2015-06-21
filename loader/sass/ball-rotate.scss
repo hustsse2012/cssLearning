@@ -1,0 +1,68 @@
+@import 'variable';
+@import 'mixin';
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.ball-rotate {
+  position: relative;
+
+  > div {
+    @include balls();
+    @include global-animation();
+
+    position: relative;
+
+    &:first-child {
+      -webkit-animation: rotate 1s 0s cubic-bezier(.7,-.13,.22,.86) infinite;
+      animation: rotate 1s 0s cubic-bezier(.7,-.13,.22,.86) infinite;
+    }
+
+    &:before, &:after {
+      @include balls();
+
+      width: 15px;
+      height: 15px;
+      content: "";
+      position: absolute;
+      opacity: 0.8;
+    }
+
+    &:before {
+      top: 1px;
+      left: -26px;
+    }
+
+    &:after {
+      top: 1px;
+      left: 26px;
+    }
+  }
+}
